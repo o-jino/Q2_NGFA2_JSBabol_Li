@@ -1,0 +1,88 @@
+*{  
+    padding: 0px;
+    margin: 0px;
+}
+.icon{
+    background: url('../images/sprite3.png' ) no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+    float: right;
+}
+#pinterest{
+    background-position: -141px -221px;
+    
+}
+#facebook{
+    background-position: -439px -146px;
+}
+#wifi{
+    background-position: -141px -72px;
+}
+#heart{
+    background-position: -587px -221px;
+}
+header{
+
+}
+nav{
+    display: flex;
+    background-color: #780000;
+    justify-content: space-around;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+footer{
+    background-color:#003049;
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+}
+body{
+    background-color:#FDF0D5;
+}
+.pagetitle{
+    color: #FDF0D5;
+}
+.links a{
+    color: #FDF0D5;
+    padding: 5px;
+}
+@media screen and (max-width: 600px){ 
+    nav{
+        position: relative;
+        background-color: #C1121F;
+    }
+    .pagetitle{
+        
+        background-color: #5f080e;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: #ff1121;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        transition: 0.2s;
+    }
+    .links a{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        color: #ffc8cc;
+        min-width: 100vw;
+        display: block;
+    
+    }
+    .links a:hover{
+        display: block;
+        background-attachment: fixed;
+        transition: 0.4s;
+        
+    }
+    nav:hover .links{
+        display: block;
+        min-width: 100vw;
+        transition: 0.4s;
+    }
+}
